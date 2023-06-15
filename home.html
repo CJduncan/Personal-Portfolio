@@ -3,55 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio</title>
+    <title>Connor Duncan</title>
     <link rel="stylesheet" href="./home.css">
 </head>
 <body>
-    <nav>  
-        <ul>
-            <li><a href="./home.html">Home</a></li>
-            <li><a href="./about.html">About</a></li>
-            <li><a href="./contact.html">Contact</a></li>
-            <li><a href="./projects.html">Projects</a></li>
-        </ul> 
+    <header>
+        <h3 class = 'logo'> Connor Duncan</h3>
+        <nav>  
+           
+            <ul class = 'nav-links'>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Projects</a></li>
+            </ul> 
+            
+    
+        </nav>
+        <h3 id = 'logo'>Search</h3>
+    </header>
 
-    </nav>
     <main>
-        <div>
-            <h1>Hi, My name is Connor Duncan</h1>
-            <h2> I am a Full Stack Developer...</h2>
+        <div class = 'intro'>
+            <h1>Connor Duncan</h1>
+            <br>
+            <h2>Web Developer</h2>
+            <p>Hi, I'm Connor Duncan. I'm a web developer with a passion for creating beautiful websites. I'm currently a student at Colorado State University, and I'm looking for a job in web development.</p>
 
         </div>
-        <div>
-            <h3> About Me</h3>
-            <p> I am a Full Stack Developer with a passion for learning and creating. I am a current student at Colorado State University studying Computer Science.
-                 I have Earned my certifictate as a full stack developer from Code Academy
-                 I am currently looking for a position as a Full Stack Developer. </p>
+        <br>
+
+        <div class = 'projects'>
+            <h2>Projects</h2>
+            <div class = 'project'>
+                <h3>Project 1</h3>
+                <p>Project 1 is a project that I made for a class. It is a website that is made with HTML, CSS, and JavaScript. It is a website that is made with HTML, CSS, and JavaScript.</p>
+            </div>
+            <br>
+            <div class = 'project'>
+                <h3>Project 2</h3>
+                <p>Project 2 is a project that I made for a class. It is a website that is made with HTML, CSS, and JavaScript. It is a website that is made with HTML, CSS, and JavaScript.</p>
+            </div>
+            <br>
+
+            <div class = 'project'>
+                <h3>Project 3</h3>
+                <p>Project 3 is a project that I made for a class. It is a website that is made with HTML, CSS, and JavaScript. It is a website that is made with HTML, CSS, and JavaScript.</p>
+            </div>
+            <br>
+
         </div>
-        <div>
-            <h3> projects</h3>
-            <p> Here are some of my projects that I have worked on. </p>
-        </div>
-        <div>
-            <h3> Contact Me</h3>
-            <p> Here is how you can contact me. </p>
+        <br>
+
+        <div class = 'contact'>
             <form>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name"><br><br>
-                <label for="email">Email:</label>
-                <input type="text" id="email" name="email"><br><br>
-                <label for="message">Message:</label>
-                <input type="text" id="message" name="message"><br><br>
-                <input type="submit" value="Submit">
+                <h2>Contact Me</h2>
+                <br>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name..">
+                <br>
+
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" placeholder="Your email..">
+                <br>
+
+                <label for="message">Message</label>
+                <input type = 'text' id = 'message' name = 'message' placeholder = 'Type Something...'>
+                <br>
+
+                <input class = 'submit' type="submit" value="Submit">
             </form>
+
         </div>
+
+
+
 
 
 
     </main>
-
-
-
+    <script src="./home.js"></script>
 
 </body>
 </html>
