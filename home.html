@@ -5,84 +5,112 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Connor Duncan</title>
     <link rel="stylesheet" href="./home.css">
+    <script src="https://kit.fontawesome.com/8d638b6792.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <h3 class = 'logo'> Connor Duncan</h3>
-        <nav>  
-           
-            <ul class = 'nav-links'>
+<div id = "header">
+    <div class = "container">
+        <nav>   
+            <h2 class = "logo"><strong>C</strong>D</h2>
+            <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
                 <li><a href="#">Projects</a></li>
-            </ul> 
-            
-    
+                <li><a href="#">Contact</a></li>
+            </ul>
         </nav>
-        <h3 id = 'logo'>Search</h3>
-    </header>
-
-    <main>
-        <div class = 'intro'>
-            <h1>Connor Duncan</h1>
-            <br>
-            <h2>Web Developer</h2>
-            <p>Hi, I'm Connor Duncan. I'm a web developer with a passion for creating beautiful websites. I'm currently a student at Colorado State University, and I'm looking for a job in web development.</p>
-
+        <div class ="header-text">
+            <p>Software Developer</p>
+            <h1>Hi, I'm <br><span>Connor</span> Duncan</h1>
         </div>
-        <br>
+    </div>
 
-        <div class = 'projects'>
-            <h2>Projects</h2>
-            <div class = 'project'>
-                <h3>Project 1</h3>
-                <p>Project 1 is a project that I made for a class. It is a website that is made with HTML, CSS, and JavaScript. It is a website that is made with HTML, CSS, and JavaScript.</p>
+</div>
+<div id = "about">
+    <div class = "container">
+        <div class = "row">
+            <div class = "about-col-1">
+                <img src = "images/IMG_3998.jpg">
             </div>
-            <br>
-            <div class = 'project'>
-                <h3>Project 2</h3>
-                <p>Project 2 is a project that I made for a class. It is a website that is made with HTML, CSS, and JavaScript. It is a website that is made with HTML, CSS, and JavaScript.</p>
+            <div class = "about-col-2">
+                <h1 class = "sub-title">About Me</h1>
+                <p>I am a Sophmore at Colorado State University majoring in Computer Science.
+                     I have earned my proffesional certificate as a Full Stack Engineer from Code Academy. </p>
+                <div class = "tab-titles">
+                    <p class = "tab-links active-links" onclick="opentab('skills')">Skills</p>
+                    <p class = "tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class = "tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class = "tab-contents active-tab" id ="skills">
+                    <ul>
+                        <li><span>Languages</span><br> HTML,CSS,Java,Javscript,Git</li>
+                        <li><span>Languages</span><br> HTML,CSS,Java,Javscript,Git</li>
+                        <li><span>Languages</span><br> HTML,CSS,Java,Javscript,Git</li>
+                    </ul>
+                </div>
+                <div class = "tab-contents" id = "experience">
+                    <ul>
+                        <li><span>Server</span><br> Knollwood Country Club</li>
+                    </ul>
+                </div>
+                <div class = "tab-contents" id ="education">
+                    <ul>
+                        <li><span>College</span><br> Ongoing Computer Science Degree at Colorado State University</li>
+                        <li><span>HighSchool</span><br> Lake Forest High School</li>
+                        
+                    </ul>
+                </div>
             </div>
-            <br>
-
-            <div class = 'project'>
-                <h3>Project 3</h3>
-                <p>Project 3 is a project that I made for a class. It is a website that is made with HTML, CSS, and JavaScript. It is a website that is made with HTML, CSS, and JavaScript.</p>
-            </div>
-            <br>
-
         </div>
-        <br>
+    </div>
+</div>
 
-        <div class = 'contact'>
-            <form>
-                <h2>Contact Me</h2>
-                <br>
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" placeholder="Your name..">
-                <br>
 
-                <label for="email">Email</label>
-                <input type="text" id="email" name="email" placeholder="Your email..">
-                <br>
-
-                <label for="message">Message</label>
-                <input type = 'text' id = 'message' name = 'message' placeholder = 'Type Something...'>
-                <br>
-
-                <input class = 'submit' type="submit" value="Submit">
-            </form>
-
+<div id = "services">
+    <div class = "container">
+        <h1 class = "sub-title">My Services</h1>
+        <div class = "services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>With the use of HTMl, CSS, and Javascript I 
+                    can make you a functioning and beautifully looking website</p>
+                <a href = "#"> learn more</a>
+    
+            </div>
+            <div>
+                <i class="fa-solid fa-code-branch"></i>
+                <h2>App Design</h2>
+                <p>With the use of HTMl, CSS, and Javascript I 
+                    can make you a functioning and beautifully looking website</p>
+                <a href= "#" >learn more</a>
+    
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>Web Design</h2>
+                <p>With the use of HTMl, CSS, and Javascript I 
+                    can make you a functioning and beautifully looking website</p>
+                <a href= "#"> learn more</a>
+    
+            </div>
         </div>
+    </div>
+</div>
 
-
-
-
-
-
-    </main>
-    <script src="./home.js"></script>
-
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(i = 0; i < tabcontents.length; i++){
+            tabcontents[i].style.display = "none";
+        }
+        for(i = 0; i < tablinks.length; i++){
+            tablinks[i].className = tablinks[i].className.replace(" active-links", "");
+        }
+        document.getElementById(tabname).style.display = "block";
+        event.currentTarget.className += " active-links";
+    }
+</script>
 </body>
 </html>
